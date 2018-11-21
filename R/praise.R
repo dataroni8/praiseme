@@ -7,8 +7,10 @@
 #' @export
 
 
-praise <- function (name = "Roni"){
+praise <- function (name = "Roni",
+                    adjective="The Best",
+                    punctuation="!"){
 
-  paste0("you're the best, ", name, "!")
+glue::glue("You're {adjective}, {name}{punctuation}")
 
 }
